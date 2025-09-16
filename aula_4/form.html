@@ -1,0 +1,140 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <style>
+        header{
+            text-align: center;
+            border-radius: 20px;
+            padding: 5px;
+            margin-left: 500px;
+            margin-right: 500px;
+            background-color: #c8d9e6;
+            box-shadow: 7px 5px 5px black;
+            border: solid 3px black;
+        }
+        footer{
+            
+            padding: 30px;
+           text-align: center;
+            background-color: #c8d9e6;
+            margin-top: 100px;
+            border: solid 3px black;
+            border-radius: 20px;
+            border-left:  1px;
+            margin-bottom: -30px;
+            margin-left: -50px;
+            margin-right: -8px;
+           
+        }
+        main{
+            text-align: center;
+            border: solid 3px black;
+            background-color: #c8d9e6;
+            margin-right: 500px;
+            margin-left: 500px;
+            font-family: Source Sans Pro;
+            box-shadow: 7px 5px 5px black;
+            border-radius: 20px;
+        }
+        body{
+            background-image: url(https://static.vecteezy.com/ti/fotos-gratis/p1/4493283-fundo-gradiente-azul-claro-e-azul-escuro-gratis-foto.jpg);
+        }
+        .voltar-container{
+    text-align: left;
+    margin: 20px 0 10px 40px;
+}
+
+.botao-voltar {
+    background-color: #c8d9e6;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    box-shadow: 3px 3px 5px black;
+    font-family: Arial, sans-serif;
+    transition: background-color 0.3s;
+}
+.icone-casa {
+    width: 30px;       
+    height: 30px;
+    vertical-align: middle;
+}
+.pessoas{
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    margin-right: 10px;
+}
+
+    </style>
+</head>
+<body>
+   <div class="voltar-container">
+    <a href="" class="botao-voltar">
+        <img src="https://cdn-icons-png.flaticon.com/512/1946/1946436.png" alt="Início" class="icone-casa">
+    </a>
+</div>
+<div style=" border: solid black 2px; margin-left: 1400px; margin-top: -35px; display: flex; padding: 5px 15px ; background-color: #c8d9e6; border-radius: 10px; width: 15px; align-items: center; justify-content: center; color: black;">
+    <a href="">Sobre Nós</a>
+</div>
+    
+    <header>
+    <h1>Formulário de Inscrição</h1>
+    </header>
+
+    <br>
+    <main>
+    <form action="cadastro.php" method="post">
+                <p><label>Nome:</label>
+                    <input type="text" name="nome" placeholder="Digite seu Nome Completo" required>
+                </p>
+                <p><label>E-mail:</label>
+                    <input type="email" name="email" placeholder="Digite seu Email" required>
+                </p>
+                <p><label>Telefone:</label>
+                         <select name="pais" required title="SELECIONE O SEU PAÍS">
+                        <option value="">---</option>
+                        <option value="brasil">🇧🇷 +55</option>
+                        <option value="argentina">🇦🇷 +54</option>
+                        <option value="usa">🇺🇸 +1</option>
+                        <option value="franca">🇫🇷 +33</option>
+                    </select>
+                    <input type="text" name="telefone" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}" placeholder="(99) 99999-9999" required title="Use o formato: (99) 99999-9999">
+                </p>
+                <p><label>CPF:</label>
+                    <input type="text" name="cpf" pattern="[0-9]{3}.[0-9]{3}.[0-9]{3}-[0-9]{2}" placeholder="999.999.999-99" required title="Use o formato: 999.999.999-99">
+                </p>
+                <p><label>Data de Nascimento:</label>
+                    <input type="text" name="data" pattern="[0-9]{2}/[0-9]{2}/[0-9]{4}" placeholder="XX/XX/XXXX" required title="Use o formato: XX/XX/XXXX">
+                </p>
+                <p><label>Gênero:</label>
+                    <input type="radio" name="genero" value="M">Masculino
+                    <input type="radio" name="genero" value="F">Feminino
+                </p>
+                <p><label>Idiomas de Interesse (Opcional): </label>
+                    <input type="checkbox" name="interesses" value="ingles" >Inglês
+                    <input type="checkbox" name="interesses" value="espanhol"  >Espanhol
+                    <input type="checkbox" name="interesses" value="frances" >Francês
+                </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+                <p>
+            
+    </form>
+    </main>
+    <p>
+    <footer>
+            <h3>
+                Todos os direitos Reservados à 
+                <br>
+                ©Escola de Idiomas Global
+            </h3>
+    </footer>
+</body>
+</html>

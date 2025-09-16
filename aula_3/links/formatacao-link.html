@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatacao de Links com CSS</title>
+    <style>
+
+        body{
+            background-color: rgb(124, 142, 143);
+        }
+
+        h1{
+            color: rgb(44, 44, 145);
+        }
+        /* Link normal */
+        a:link {
+            color: blue;
+            text-decoration: underline;
+        }
+        /*Link ja visitado */
+        a:visited{
+            color: purple;
+            text-decoration: underline;
+        }
+        /* Quando passar o mouse por cima do link */
+        a:hover{
+            color: red;
+            text-decoration: underline;
+            font-size: 100px;
+        }
+         /* Enquanto o link é clicado */
+         a:active{
+            color: orange;
+         }
+    </style>
+</head>
+<body>
+    <header style="text-align: center;">
+        <h1>Nossa Página</h1>
+        <a href="links.html" target="_blank">Ir ao site </a>
+    </header>
+</body>
+</html>

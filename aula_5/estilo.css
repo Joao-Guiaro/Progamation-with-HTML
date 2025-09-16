@@ -1,0 +1,35 @@
+/* * = Aplica a Todos os elementos*/
+*{
+    margin: 20;
+    padding: 20;
+    box-sizing: border-box;
+} 
+/* #id = Único, para um elemento específico */
+#titulo{
+    color: rgb(0, 21, 255);
+    text-align: center;
+}
+/* tag = Altera todos os elementos daquela tag */
+p{
+    font-size: 18px;
+    line-height: 1.5;
+}
+/* h1, h2, h3 = Agrupamentos de seletores  */
+h1, h2, h3{
+    font-family: Arial, sans-serif;
+    color: darkgreen;
+  
+}
+/* .class = Reutilizável em vários elementos */
+.destaque{
+    color: rgb(255, 0, 0);
+    font-weight: bold;
+}
+h4{
+    line-height: 50px;
+    letter-spacing: 10px;
+    word-spacing: 15px;
+}
+ul{
+    list-style-type: circle;
+}
