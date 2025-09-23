@@ -23,7 +23,7 @@ a:hover {
 }
 
 /* Submenu escondido */
-.sub {
+.sub{
     display: none;
     position: absolute;
     top: 100%;             /* aparece abaixo do item pai */
@@ -36,7 +36,6 @@ a:hover {
     padding: 10px;
 }
 
-/* Mostrar submenu no hover */
-li:hover > ul {
+li:hover > ul{
     display: block;
 }
