@@ -1,0 +1,136 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  margin-top: 40px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+.container-flex{
+    display: flex;
+    background-color: purple;
+    gap: 10px ;
+}
+.item-flex{
+    background-color: rgb(252, 97, 255);
+    padding: 10px;
+}
+/*exemplo 2 */
+.direcao-linha{
+    flex-direction: row;
+}
+.direcao-coluna{
+    flex-direction: column;
+}
+/*exemplo 3 */
+.wrap{
+    flex-wrap: wrap;
+}
+.nowrap{
+    flex-wrap: nowrap;
+}
+/*exemplo 4*/
+.justificar-inicio{
+    justify-content: flex-start;
+}
+.justificar-fim{
+    justify-content: flex-end;
+}
+.justificar-centro{
+    justify-content: center;
+}
+.justificar-space-between{
+    justify-content: space-between;
+}
+.justificar-space-around{
+    justify-content: space-around;
+}
+.justificar-space-evenly{
+    justify-content: space-evenly;
+}
+/* exemplo 5 */
+.alinhar-items .container-flex{
+    height: 300px;;
+}
+.alinhar-stretch{
+    align-items: stretch;
+}
+.alinhar-inicio{
+    align-items: flex-start;
+}
+.alinhar-fim{
+    align-items: end;
+}
+.alinhar-centro{
+    align-items: center;
+}
+.alinhar-baseline{
+    align-items: baseline;
+}
+.alinhar-conteudo{
+    align-content: space-evenly;
+    height: 300px;
+}
+.alinhar-conteudo .caixa{
+    flex: 0 0 30%;  
+}
+/* exemplo 6 */
+.ordem1{
+    order:0
+}
+.ordem2{
+    order:1
+}
+.ordem3{
+    order:3
+}
+/*exemplo7*/
+.exemplo-grow .item-flex{
+    flex-basis: 100px;
+}
+.crescer1{
+    flex-grow: 1;
+}
+.crescer2{
+    flex-grow: 2;
+}
+.alinhar-items-individuais .container-flex{
+    height: 300px;
+}
+.self-inicio{
+    align-self: flex-start;
+}
+.self-centro{
+    align-self: center;
+}
+.self-fim{
+    align-self: flex-end;
+}
+.menu-nav{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+}
+.menu-nav a{
+    text-decoration: none;
+    color: azure;
+    padding: 15px ;
+}
+.menu-nav a:hover{
+    background-color: grey;
+}
+.responsivo{
+    flex-wrap: wrap;
+}
+/* ativação do flex para todos os containers */
+/* container flex e itens flex */

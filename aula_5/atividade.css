@@ -29,8 +29,8 @@ ul{
     background-color: #555 ;
     min-width: 150px;
     margin-left: 260px;
+    /* position: relative; */
     z-index: 10;
-
 }
 table{
     margin-left: 649px;
@@ -41,6 +41,8 @@ table, td{
 main{
     align-items: center;
     text-align: center;
+    position: relative;
+    z-index: 0;
   
 }
 a {
@@ -70,7 +72,8 @@ li:hover > ul {
     height:200px;
     width: 250px;
     margin-right: 80px;
-    z-index: 1;
+    position: relative;
+    z-index: 2;
     
 }
 footer{
